@@ -14,11 +14,11 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]) => 3`
  *
  */
-function countCats(/* matrix */) {
+function countCats(matrix) {
   return matrix.reduce(function(acc,item) {
     let itmCount = item.filter( i => i==='^^').length;
     return acc = acc + itmCount;
-  } );
+  },0 );
 }
 
 module.exports = {
