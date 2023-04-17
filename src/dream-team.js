@@ -18,7 +18,7 @@ function createDreamTeam(members) {
     if(typeof item === 'String') {
       return acc = acc + item.toUpperCase()[0];
     }
-  },'')
+  },'').split("").sort().join("");
 }
 
 module.exports = {
