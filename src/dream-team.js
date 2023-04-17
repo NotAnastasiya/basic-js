@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(members) {
-  if((members.filter(item => typeof item !== 'string')).length = members.length) {
+  if((members.filter(item => typeof item !== 'string')).length !== members.length) {
     return members.reduce(function(acc, item) {
       if(typeof item === 'string') {
         acc = acc + item.replace(/\s/g,"").toUpperCase()[0];
