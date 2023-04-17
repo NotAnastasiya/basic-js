@@ -16,7 +16,7 @@ const { NotImplementedError } = require('../extensions/index.js');
 function createDreamTeam(members) {
 return members.reduce(function(acc, item) {
   if(typeof item === 'string') {
-    return acc = acc + item.replase(/\s/g,"").toUpperCase()[0];
+    return acc = acc + item.replace(/\s/g,"").toUpperCase()[0];
   }
 },'').split("").sort().join("");
 }
