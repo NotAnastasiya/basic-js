@@ -22,6 +22,7 @@ function createDreamTeam(members) {
       return acc;
     },'').split("").sort().join("");
   }
+  return false;
 }
 
 module.exports = {
